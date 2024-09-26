@@ -185,7 +185,7 @@ class OpenDoc(Current):
         self.g_purchase = []
         self.g_sale = []
 
-        print(f'\033[32mСчитываем данные из "{self.name_book}", вычисляем доход банка и записуваем в файл\033[0m')
+        print(f'\033[32mСчитываем данные из "{self.name_book}", вычисляем доход банка и записываем в файл\033[0m')
         book = openpyxl.load_workbook(filename=self.name_book)
         sheet = book.worksheets[0]
         for a in range(3, 13):
